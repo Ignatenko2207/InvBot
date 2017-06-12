@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="AmazonBot">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="cglib-nodep-3.2.4.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/cglib-nodep-3.2.4/cglib-nodep-3.2.4">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-guava-2.23.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jersey-guava-2.23.2/jersey-guava-2.23.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jetty-io-9.2.13.v20150730.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jetty-io-9.2.13.v20150730/jetty-io-9.2.13.v20150730">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jstl-1.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jstl-1.2/jstl-1.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-container-servlet.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jersey-container-servlet/jersey-container-servlet">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xml-apis-1.4.01.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/xml-apis-1.4.01/xml-apis-1.4.01">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javassist-3.20.0-GA.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/javassist-3.20.0-GA/javassist-3.20.0-GA">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jna-4.1.0.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jna-4.1.0/jna-4.1.0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sac-1.3.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/sac-1.3/sac-1.3">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.ws.rs-api-2.0.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/javax.ws.rs-api-2.0.1/javax.ws.rs-api-2.0.1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-locator-2.5.0-b05.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/hk2-locator-2.5.0-b05/hk2-locator-2.5.0-b05">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-client.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jersey-client/jersey-client">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-io-2.5.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-io-2.5/commons-io-2.5">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hamcrest-library-1.3.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/hamcrest-library-1.3/hamcrest-library-1.3">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-utils-2.5.0-b05.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/hk2-utils-2.5.0-b05/hk2-utils-2.5.0-b05">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="httpmime-4.5.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/httpmime-4.5.2/httpmime-4.5.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xalan-2.7.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/xalan-2.7.2/xalan-2.7.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xercesImpl-2.11.0.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/xercesImpl-2.11.0/xercesImpl-2.11.0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-debug-all-5.0.4.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/asm-debug-all-5.0.4/asm-debug-all-5.0.4">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="client-combined-3.0.1-nodeps.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/client-combined-3.0.1-nodeps/client-combined-3.0.1-nodeps">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="validation-api-1.1.0.Final.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/validation-api-1.1.0.Final/validation-api-1.1.0.Final">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="httpcore-4.4.4.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/httpcore-4.4.4/httpcore-4.4.4">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang3-3.4.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-lang3-3.4/commons-lang3-3.4">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.inject-2.5.0-b05.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/javax.inject-2.5.0-b05/javax.inject-2.5.0-b05">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-logging-1.2/commons-logging-1.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="serializer-2.7.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/serializer-2.7.2/serializer-2.7.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="httpclient-4.5.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/httpclient-4.5.2/httpclient-4.5.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="htmlunit-2.23.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/htmlunit-2.23/htmlunit-2.23">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="guava-19.0.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/guava-19.0/guava-19.0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-api-2.5.0-b05.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/hk2-api-2.5.0-b05/hk2-api-2.5.0-b05">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.servlet-api-3.1.0.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/javax.servlet-api-3.1.0/javax.servlet-api-3.1.0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-common.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jersey-common/jersey-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsoup-1.10.2-sources.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jsoup-1.10.2-sources/jsoup-1.10.2-sources">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="webdriver-factory-2.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/webdriver-factory-2.1/webdriver-factory-2.1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.annotation-api-1.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/javax.annotation-api-1.2/javax.annotation-api-1.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jna-platform-4.1.0.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jna-platform-4.1.0/jna-platform-4.1.0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="osgi-resource-locator-1.0.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/osgi-resource-locator-1.0.1/osgi-resource-locator-1.0.1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="phantomjsdriver-1.3.0.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/phantomjsdriver-1.3.0/phantomjsdriver-1.3.0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aopalliance-repackaged-2.5.0-b05.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/aopalliance-repackaged-2.5.0-b05/aopalliance-repackaged-2.5.0-b05">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jetty-util-9.2.13.v20150730.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jetty-util-9.2.13.v20150730/jetty-util-9.2.13.v20150730">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="websocket-common-9.2.15.v20160210.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/websocket-common-9.2.15.v20160210/websocket-common-9.2.15.v20160210">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-exec-1.3.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-exec-1.3/commons-exec-1.3">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-api-2.2.7.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jaxb-api-2.2.7/jaxb-api-2.2.7">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cssparser-0.9.20.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/cssparser-0.9.20/cssparser-0.9.20">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hamcrest-core-1.3.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/hamcrest-core-1.3/hamcrest-core-1.3">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="junit-4.12.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/junit-4.12/junit-4.12">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-container-servlet-core.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jersey-container-servlet-core/jersey-container-servlet-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsoup-1.10.2-javadoc.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jsoup-1.10.2-javadoc/jsoup-1.10.2-javadoc">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsoup-1.10.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jsoup-1.10.2/jsoup-1.10.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.osgi.core-4.2.0.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/org.osgi.core-4.2.0/org.osgi.core-4.2.0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-media-jaxb.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jersey-media-jaxb/jersey-media-jaxb">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-codec-1.10.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-codec-1.10/commons-codec-1.10">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="persistence-api-1.0.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/persistence-api-1.0/persistence-api-1.0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.servlet-api-3.0.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/javax.servlet-api-3.0.1/javax.servlet-api-3.0.1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="htmlunit-core-js-2.23.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/htmlunit-core-js-2.23/htmlunit-core-js-2.23">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="netty-3.5.7.Final.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/netty-3.5.7.Final/netty-3.5.7.Final">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-server.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jersey-server/jersey-server">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="postgresql-9.4.1212.jre7.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/postgresql-9.4.1212.jre7/postgresql-9.4.1212.jre7">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="websocket-api-9.2.15.v20160210.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/websocket-api-9.2.15.v20160210/websocket-api-9.2.15.v20160210">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="neko-htmlunit-2.23.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/neko-htmlunit-2.23/neko-htmlunit-2.23">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="selenium-server-standalone-3.0.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/selenium-server-standalone-3.0.1/selenium-server-standalone-3.0.1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gson-2.3.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/gson-2.3.1/gson-2.3.1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="websocket-client-9.2.15.v20160210.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/websocket-client-9.2.15.v20160210/websocket-client-9.2.15.v20160210">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="AmazonBot"/>
+        <property name="java-output-path" value="/AmazonBot/build/classes"/>
+    </wb-module>
+</project-modules>
