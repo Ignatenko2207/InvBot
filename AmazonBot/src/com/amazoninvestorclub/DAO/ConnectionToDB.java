@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 
 public class ConnectionToDB {
 	
-	static final String DBURL= "jdbc:postgresql://localhost:5432/AmazonExpert";
+	static final String DBURL= "jdbc:postgresql://localhost:5432/amazondb";
 	static final String DBUser = "postgres";
 	static final String DBUserPassword= "248842";
 		
