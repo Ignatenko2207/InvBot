@@ -192,7 +192,12 @@ public class ActionAmazonBean {
 			atemptToCreate++;
 			log.log(Level.INFO,
 					"Method createNewAccount. Try to register account " + accountEmail + " Atempt: " + atemptToCreate);
-			WebDriver userDriver = getNewProxyFirefoxDriver();
+			WebDriver userDriver = null;
+			
+			do {
+				userDriver = getWebDriver();
+			} while (userDriver == null);
+			
 
 			try {
 				String startPageHTML = userDriver.getPageSource();
@@ -384,34 +389,15 @@ public class ActionAmazonBean {
 		return name;
 	}
 
-	private WebDriver getNewProxyFirefoxDriver() {
-		System.setProperty("webdriver.gecko.driver", "C:\\java\\selenium\\geckodriver.exe");
+	private WebDriver getWebDriver() {
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\selenium\\chromedriver.exe");
 
-		ProfilesIni WSP = new ProfilesIni();
-		FirefoxProfile profile = WSP.getProfile("amazon");
-
-		// set proxy
-		ArrayList<ProxyForUse> proxies = getAllProxies();
-
-		ProxyForUse proxyForUse = proxies.get(getRandomIndex(proxies.size()));
-
-		profile.setPreference("network.proxy.type", 1);
-		profile.setPreference("network.proxy.http", proxyForUse.getProxy());
-		profile.setPreference("network.proxy.http_port", proxyForUse.getPort());
-
-		try {
-			ProxiesDAO.deleteProxy(proxyForUse.getProxy(), proxyForUse.getPort());
-		} catch (DAOException e1) {
-			e1.printStackTrace();
-		}
-		// set other preferences
-		profile.setPreference("permissions.default.image", 2);
-
-		DesiredCapabilities firefox = DesiredCapabilities.firefox();
-		firefox.setCapability(FirefoxDriver.PROFILE, profile);
+		
+		DesiredCapabilities chrome = DesiredCapabilities.chrome();
 
 		timer.waitSeconds(10);
-		WebDriver driver = WebDriverFactory.getDriver(firefox);
+		WebDriver driver = WebDriverFactory.getDriver(chrome);
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 		try {
@@ -429,18 +415,76 @@ public class ActionAmazonBean {
 				log.log(Level.INFO, "Method getNewFirefoxDriver. Web driver wasn't created. Try again");
 				timer.waitSeconds(getRandomNumber(180, 300)); // it was 5-10 sec
 																// before
-				getNewProxyFirefoxDriver();
+				return null;
 			}
 
 		} catch (Exception e) {
 			log.log(Level.INFO, "Method getNewFirefoxDriver. Web driver wasn't created.");
 			WebDriverFactory.dismissDriver(driver);
-			getNewProxyFirefoxDriver();
+			
 		}
 
 		return driver;
 	}
 
+// OLD VERSION DON'T DELETE
+//	private WebDriver getNewProxyFirefoxDriver() {
+//		System.setProperty("webdriver.gecko.driver", "C:\\java\\selenium\\geckodriver.exe");
+//
+//		ProfilesIni WSP = new ProfilesIni();
+//		FirefoxProfile profile = WSP.getProfile("amazon");
+//
+//		// set proxy
+//		ArrayList<ProxyForUse> proxies = getAllProxies();
+//
+//		ProxyForUse proxyForUse = proxies.get(getRandomIndex(proxies.size()));
+//
+//		profile.setPreference("network.proxy.type", 1);
+//		profile.setPreference("network.proxy.http", proxyForUse.getProxy());
+//		profile.setPreference("network.proxy.http_port", proxyForUse.getPort());
+//
+//		try {
+//			ProxiesDAO.deleteProxy(proxyForUse.getProxy(), proxyForUse.getPort());
+//		} catch (DAOException e1) {
+//			e1.printStackTrace();
+//		}
+//		// set other preferences
+//		profile.setPreference("permissions.default.image", 2);
+//
+//		DesiredCapabilities firefox = DesiredCapabilities.firefox();
+//		firefox.setCapability(FirefoxDriver.PROFILE, profile);
+//
+//		timer.waitSeconds(10);
+//		WebDriver driver = WebDriverFactory.getDriver(firefox);
+//		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+//		driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
+//		try {
+//
+//			timer.waitSeconds(15);
+//			driver.get("https://www.amazon.com");
+//
+//			timer.waitSeconds(getRandomNumber(5, 10)); // it was 5-10 sec before
+//
+//			// check driver
+//			String currentPage = driver.getPageSource();
+//			if (currentPage.contains("nav-flyout-ya-newCust")) {
+//				return driver;
+//			} else {
+//				log.log(Level.INFO, "Method getNewFirefoxDriver. Web driver wasn't created. Try again");
+//				timer.waitSeconds(getRandomNumber(180, 300)); // it was 5-10 sec
+//																// before
+//				getNewProxyFirefoxDriver();
+//			}
+//
+//		} catch (Exception e) {
+//			log.log(Level.INFO, "Method getNewFirefoxDriver. Web driver wasn't created.");
+//			WebDriverFactory.dismissDriver(driver);
+//			getNewProxyFirefoxDriver();
+//		}
+//
+//		return driver;
+//	}
+//	
 	private ArrayList<ProxyForUse> getAllProxies() {
 		ArrayList<ProxyForUse> proxies = new ArrayList<>();
 		ProxiesDAO prxDAO = new ProxiesDAO();
